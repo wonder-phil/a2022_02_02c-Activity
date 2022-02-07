@@ -11,7 +11,6 @@ class MainActivity : AppCompatActivity() {
 
     private val toScoreActivity: EditText
         get() = findViewById(R.id.to_score_activity)
-
     private val buttonToScoreActivity: Button
         get() = findViewById(R.id.button_to_ScoreActivity)
 
@@ -31,11 +30,8 @@ class MainActivity : AppCompatActivity() {
                     scoreActivity ->
                         scoreActivity.putExtra("FROM_MAIN",toScoreActivity.getText().toString())
                         startActivity(scoreActivity)
-
                 }
-
             }
-
         })
 
     }

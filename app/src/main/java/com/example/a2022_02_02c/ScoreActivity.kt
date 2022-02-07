@@ -19,8 +19,6 @@ class ScoreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_score)
 
-
-
         intent?.let {
             val myStr = it.getStringExtra("FROM_MAIN")
             toMainActivity.setText(myStr)
