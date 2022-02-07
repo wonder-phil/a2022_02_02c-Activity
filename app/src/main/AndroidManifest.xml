@@ -11,10 +11,13 @@
         android:theme="@style/Theme.A2022_02_02c">
         <activity
             android:name=".ScoreActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:process=":p99"/>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:process=":p00001"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
